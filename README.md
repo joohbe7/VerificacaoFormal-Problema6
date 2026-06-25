@@ -8,7 +8,7 @@
 
 ## Invariante de Loop
 
-0 < d < n 
+0 <= d < n 
 
 ## Código
 
@@ -21,7 +21,7 @@ def largest_proper_divisor_broken(n: int):
     d = n - 1
 
     # 2. ASSERCAO DE INICIALIZACAO (CASO BASE)
-    assert 0 < d < n, \
+    assert 0 <= d < n, \
         "Erro: Invariante falhou na inicializacao!"
 
     while d > 0:
