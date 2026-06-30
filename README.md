@@ -1,5 +1,18 @@
-# Problema 6 - Busca do Maior Divisor Próprio ## Especificação - Pré-condição: n > 0 - Pós-condição: retornar o maior divisor próprio de n - Função Variante: V(state) = d ## Invariante de Loop 0 < d < n ## Código
-python
+# Problema 6 - Busca do Maior Divisor Próprio
+
+## Especificação
+
+- Pré-condição: `n > 0`
+- Pós-condição: retornar o maior divisor próprio de `n`
+- Função Variante: `V(state) = d`
+
+## Invariante de Loop
+
+`0 < d < n`
+
+## Código
+
+```python
 def largest_proper_divisor_broken(n: int):
 
     # 1. ASSERCAO DE PRE-CONDICAO
@@ -47,10 +60,22 @@ def largest_proper_divisor_broken(n: int):
         "Erro: A pos-condicao falhou na terminacao!"
 
     return resultado
-## Falha Encontrada Teste realizado com n = 9:
-text
+```
+
+## Falha Encontrada
+
+Teste realizado com `n = 9`:
+
+```text
 AssertionError: Erro: Loop em execucao infinita (sem progresso)!
-## Explicação O decremento da variável d está ausente quando n % d != 0. Assim, a função variante V(state) = d não diminui a cada iteração do laço. A asserção
-python
+```
+
+## Explicação
+
+O decremento da variável `d` está ausente quando `n % d != 0`. Assim, a função variante `V(state) = d` não diminui a cada iteração do laço. A asserção
+
+```python
 assert d < velha_variante
+```
+
 detecta essa falha e interrompe a execução.
