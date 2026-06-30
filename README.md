@@ -1,4 +1,4 @@
-# Problema 9 - Soma dos Primeiros N Naturais (Soma de Gauss)
+# Problema Alternativo - Soma dos Primeiros N Naturais (Soma de Gauss)
 
 ## Especificação
 
