@@ -2,9 +2,9 @@
 
 ## Especificação
 
-- Pré-condição: n >= 0
-- Pós-condição: s = n * (n + 1) / 2
-- Função Variante: V(state) = n - i
+## Pré-condição: n >= 0
+## Pós-condição: s = n * (n + 1) / 2
+## Função Variante: V(state) = n - i
 
 ## Invariante de Loop
 
@@ -12,7 +12,6 @@
 
 ## Código
 
-```python
 def sum_naturals_broken(n: int):
 
     # 1. ASSERCAO DE PRE-CONDICAO
