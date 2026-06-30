@@ -14,7 +14,7 @@ Este repositório contém a solução de dois problemas de verificação de prog
 
 ## Invariante de Loop
 
-`0 < d < n`
+`0 <= d < n`
 
 ## Código
 
@@ -27,7 +27,7 @@ def largest_proper_divisor_broken(n: int):
     d = n - 1
 
     # 2. ASSERCAO DE INICIALIZACAO (CASO BASE)
-    assert 0 < d < n, \
+    assert 0 <= d < n, \
         "Erro: Invariante falhou na inicializacao!"
 
     while d > 0:
@@ -52,7 +52,7 @@ def largest_proper_divisor_broken(n: int):
         # (decremento ausente)
 
         # 3. MANUTENCAO DO INVARIANTE
-        assert 0 < d < n, \
+        assert 0 <= d < n, \
             "Erro: Invariante violado no corpo do loop!"
 
         # 4. DECREMENTO DA VARIANTE
