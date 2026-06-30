@@ -1,3 +1,5 @@
+def largest_proper_divisor_broken(n: int):
+
 # 1. ASSERCAO DE PRE-CONDICAO
 assert n > 0, "Erro: Pre-condicao violada!"
 
